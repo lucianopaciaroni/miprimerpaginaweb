@@ -211,7 +211,7 @@
     left: 0;
 }
 
-.main__contacto {
+.contacto {
     display: grid;
     justify-content: center;
     background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
@@ -236,6 +236,23 @@
     line-height: 35px;
    
 }
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.mapa {
+ 
+    height: auto;
+    object-fit: cover;
+
+}
+
+
+
+
+
 
 @keyframes logo {
     0% {
