@@ -1,0 +1,20 @@
+
+.footer {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
+    margin: 4px;
+
+}
+
+.footer__texto {
+    text-align: left;
+    margin-top: auto;
+    margin-left: 1rem;
+    color: black;
+}
+
+.footer__íconos {
+    margin: 4px;
+}

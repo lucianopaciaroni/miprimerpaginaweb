@@ -1,0 +1,25 @@
+
+.header {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-decoration: none;
+    
+}
+
+.nav__lista {
+    display: flex;
+    margin: 10px;
+}
+
+.nav__item {
+    margin-left: 16px;
+    font-size: 18px;
+    color: antiquewhite;
+    text-decoration: none;
+    list-style: none;
+}
