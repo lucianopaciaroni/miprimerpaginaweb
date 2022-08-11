@@ -4,14 +4,14 @@
     display: flex;
     height: 700px;
     width: 100%;
-    background: $colorPrincipal;
-    background-color:$colorPrincipal;
+    // background: $colorPrincipal;
+    background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
     padding-top: 20px;
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    color:$colorPrincipal;
+    // color:$colorPrincipal;
 
 }
 
@@ -21,11 +21,14 @@
 }
 
 .section2 {
-    background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
-    padding: 40px;
-    height: 400px;
-    display: flex;
-    align-items: center;
+    @extend .section1;
+    justify-content: center;
+}
+
+.lo-que-limpiamos {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .Título {
@@ -37,7 +40,7 @@
     min-height: 200px;
     width: 30%;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     margin-left: auto;
     margin-right: auto;
     list-style: none;
@@ -78,6 +81,7 @@
     height: 1000px;
     width: 1000px;
     display: grid;
+    align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1 fr 1fr 1fr;
     grid-template-areas:
@@ -86,7 +90,6 @@
         "img5 img4 img6"
         "img5 img4 img6"
         "img7 img7 img8";
-
     gap: 10px 10px;
 }
 
@@ -145,6 +148,8 @@
 }
 
 .contacto {
+    height: 500px;
+    padding: 2rem;
     display: grid;
     justify-content: center;
     background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
@@ -161,13 +166,18 @@
     padding: 2rem;
     justify-content: space-between;
     align-items: center;
-    height: 800px;
+    height: 1200px;
 }
 
 .section__faqLista {
     list-style-type: none;
     line-height: 35px;
+    font-size: 30px;
 
+}
+
+.pasifunciona{
+    font-size: 30px;
 }
 
 .carousel-item img {
@@ -176,9 +186,9 @@
 }
 
 .mapa {
-
-    height: auto;
-    object-fit: cover;
+display: flex;
+justify-items: center;
+align-items: center;
 
 }
 
@@ -186,8 +196,9 @@
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 1fr;
+    height: 600px;
     justify-items: center;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
     background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
 }
@@ -200,10 +211,30 @@
 .foto {
     animation-name: puff-in-center;animation-duration: 1s;
     animation-iteration-count: initial;
+}
 
+.section__servicios {
+    text-align: center;
+    color:white;
+    align-content: center;
+    background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
+}
+
+.preguntas {
+    color: black;
+  font-style: italic;
+  font-weight: 600;
 
 }
 
+.mapa {
+    object-fit: cover;
+}
+
+.label {
+    font-weight: 600;
+   color:white;
+}
 
 @keyframes logo {
     0% {

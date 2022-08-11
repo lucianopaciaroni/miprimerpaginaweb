@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 1023px) {
     .grid {
         display: grid;
@@ -11,7 +10,7 @@
             "img5 img6"
             "img7 img8";
     }
-    
+
     .nav__lista {
         display: grid;
         grid-template-columns: 3fr;
@@ -21,7 +20,7 @@
         text-decoration: none;
     }
 
-    .nav__item{
+    .nav__item {
         font-size: 14px;
     }
 
@@ -33,11 +32,15 @@
     }
 
     .imágenes {
-    
+
         background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
         object-fit: cover;
         width: 100%;
         margin: auto;
+    }
+
+    .sobre-nosotros {
+        height: 800px;
     }
 
 
@@ -45,6 +48,15 @@
 }
 
 @media screen and (max-width: 599px) {
+
+    .section1 {
+        height: 500px;
+    }
+
+    .section2 {
+        text-align: center;
+    }
+
     .grid {
         display: grid;
         width: auto;
@@ -77,12 +89,17 @@
         text-decoration: none;
     }
 
-    .nav__item{
+    .nav__item {
         font-size: 14px;
     }
 
+    .logo {
+        height: 100px;
+        width: auto;
+    }
+
     .imágenes {
-    
+
         background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
         object-fit: cover;
         width: 100%;
@@ -98,8 +115,8 @@
 
     .card__lista {
 
-        margin-left: 0;
-        text-align: center;
+        font-size: 30px;
+        text-align: justify;
     }
 
     .section3__imagenes {
@@ -108,5 +125,54 @@
         grid-template-rows: 7 fr;
         justify-items: center;
     }
+
+    .section__faq {
+        max-width: 599px;
+        height: 1300px;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .section__faqLista {
+        font-size: 16px;
+        word-wrap: break-word;
+        text-align: center;
+        white-space: no-wrap;
+
+    }
+
+    .sobre-nosotros {
+        height: 1000px;
+        padding: 2rem 2rem;
+        margin: 0;
+    }
+
+    .foto {
+        width: 300px;
+    }
+
+    .las-preguntas {
+        font-size: 20px;
+    }
+
+    .respuestas {
+        font-size: 14px;
+    }
+
+    .video {
+        width: 300px;
+    }
+
+    .pasifunciona {
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+        font-style: italic;
+    }
+
+.mapa {
+    width: 300px;
+}
 
 }
