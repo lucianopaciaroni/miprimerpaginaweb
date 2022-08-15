@@ -9,7 +9,8 @@
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
-  margin: 4px; }
+  border-style: solid;
+  border-color: aliceblue; }
 
 .footer__texto {
   text-align: left;
@@ -23,7 +24,7 @@
 .header {
   width: 100%;
   display: flex;
-  background-color: white;
+  background-color: aliceblue;
   height: 100px;
   justify-content: space-between;
   align-items: center;
@@ -41,11 +42,11 @@
   text-decoration: none;
   list-style: none; }
 
-.section1, .section2 {
+.section1 {
   display: flex;
   height: 700px;
   width: 100%;
-  background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
+  background-color: aliceblue;
   padding-top: 20px;
   text-align: center;
   align-items: center;
@@ -57,15 +58,20 @@
   margin: 20px; }
 
 .section2 {
-  justify-content: center; }
+  background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
+  text-align: center;
+  padding: 1rem; }
+
+.section3_ {
+  background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
+  border-color: aliceblue;
+  padding: 1rem; }
 
 .lo-que-limpiamos {
   color: white;
   font-size: 50px;
-  font-weight: 700; }
-
-.Título {
-  font-size: 40px; }
+  font-weight: 700;
+  margin: 0; }
 
 .card__lista {
   text-align: center;
@@ -88,7 +94,8 @@
   background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
   object-fit: cover;
   width: 50%;
-  margin: auto; }
+  margin: auto;
+  border-color: aliceblue; }
 
 .logo {
   animation-name: roll-in-left;
@@ -96,12 +103,11 @@
   animation-iteration-count: initial; }
 
 .grid {
-  padding: 1rem;
+  padding: 3rem;
   height: 1000px;
   width: 1000px;
   display: grid;
-  align-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 450px 450px 450px;
   grid-template-rows: 1 fr 1fr 1fr;
   grid-template-areas: "img1 img1 img2" "img3 img4 img2" "img5 img4 img6" "img5 img4 img6" "img7 img7 img8";
   gap: 10px 10px; }
@@ -147,12 +153,15 @@
   bottom: 0;
   left: 0; }
 
-.contacto {
+.contacto, .contacto2 {
   height: 500px;
   padding: 2rem;
   display: grid;
-  justify-content: center;
-  background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1); }
+  background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
+  justify-content: center; }
+
+.contacto2 {
+  text-align: center; }
 
 .section__faq {
   display: grid;
@@ -188,7 +197,7 @@
   display: grid;
   grid-template-columns: 2fr;
   grid-template-rows: 1fr;
-  height: 600px;
+  height: 800px;
   justify-items: center;
   padding: 3rem;
   text-align: center;
@@ -200,14 +209,15 @@
 
 .foto {
   animation-name: puff-in-center;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-iteration-count: initial; }
 
 .section__servicios {
   text-align: center;
   color: white;
-  align-content: center;
-  background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1); }
+  align-items: center;
+  background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
+  padding: 1rem; }
 
 .preguntas {
   color: black;
@@ -215,11 +225,17 @@
   font-weight: 600; }
 
 .mapa {
-  object-fit: cover; }
+  object-fit: cover;
+  padding: 1rem; }
 
 .label {
   font-weight: 600;
   color: white; }
+
+.lugar-de-trabajo {
+  font-size: 26px;
+  color: white;
+  text-align: center; }
 
 @keyframes logo {
   0% {
@@ -317,13 +333,14 @@
     height: 800px; } }
 
 @media screen and (max-width: 599px) {
-  .section1, .section2 {
+  .section1 {
     height: 500px; }
   .section2 {
     text-align: center; }
   .grid {
     display: grid;
     width: auto;
+    padding: 1.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8"; }
@@ -342,7 +359,7 @@
   .nav__item {
     font-size: 14px; }
   .logo {
-    height: 100px;
+    height: 90px;
     width: auto; }
   .imágenes {
     background-image: linear-gradient(to right, #051937, #00476f, #007c9e, #00b3ba, #12ebc1);
@@ -390,4 +407,8 @@
     color: black;
     font-style: italic; }
   .mapa {
-    width: 300px; } }
+    width: 300px; }
+  .label {
+    font-size: 14px; }
+  .section__servicios {
+    padding: 1rem; } }

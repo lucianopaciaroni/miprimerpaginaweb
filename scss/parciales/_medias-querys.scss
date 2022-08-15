@@ -60,6 +60,7 @@
     .grid {
         display: grid;
         width: auto;
+        padding: 1.5rem;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas:
@@ -94,7 +95,7 @@
     }
 
     .logo {
-        height: 100px;
+        height: 90px;
         width: auto;
     }
 
@@ -171,8 +172,18 @@
         font-style: italic;
     }
 
-.mapa {
-    width: 300px;
-}
+    .mapa {
+      width: 300px;  
+    }
 
-}
+    .label {
+        font-size: 14px;
+    }
+
+    .section__servicios {
+        padding: 1rem;
+       
+    }
+    
+        
+    }
