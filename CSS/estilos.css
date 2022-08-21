@@ -28,19 +28,25 @@
   height: 100px;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  text-decoration: none; }
+  padding: 2rem; }
 
 .nav__lista {
   display: flex;
   margin: 10px; }
 
+a:link {
+  text-decoration: none;
+  font-weight: 500; }
+
+a:visited {
+  text-decoration: none; }
+
 .nav__item {
   margin-left: 16px;
   font-size: 18px;
   color: antiquewhite;
-  text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  color: black; }
 
 .section1 {
   display: flex;
@@ -238,6 +244,9 @@
   color: white;
   text-align: center; }
 
+p:hover {
+  font-weight: 900; }
+
 @keyframes logo {
   0% {
     opacity: 0; }
@@ -412,4 +421,6 @@
   .label {
     font-size: 14px; }
   .section__servicios {
-    padding: 1rem; } }
+    padding: 1rem; }
+  .contacto, .contacto2 {
+    height: 500px; } }

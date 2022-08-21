@@ -254,6 +254,11 @@ align-items: center;
     text-align: center;
 }
 
+p:hover {
+    font-weight: 900;
+    
+}
+
 @keyframes logo {
     0% {
         opacity: 0;
